@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quiz App - Profile</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__text">Quiz App</h1>
+    </header>
+
+    <main>
+      <section class="main-profile">
+        <img
+          class="profile-img"
+          src="./img/profile.svg"
+          alt="profile"
+          width="40%"
+          height="40%"
+        />
+        <h3 class="profile-name">Anna Steele</h3>
+        <article class="about-me-section">
+          <h4>About me</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus
+            odit quaerat neque iure hic.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-settings"></section>
+      <h5>Settings</h5>
+      <p>Dark Mode</p>
+
+      <divc lass="toggle-switch">
+        <input type="checkbox" id="switch" class="checkbox" />
+        <span class="slider"></span>
+        <label for="switch" class="toggle"></label>
+      </divc>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__link">
+          <img
+            class="footer__img"
+            class="home-img"
+            src="./img/home.svg"
+            alt="home"
+          />
+        </a>
+
+        <a href="./bookmarks.html" class="footer__link">
+          <img class="footer__img" src="./img/bookmarks.svg" alt="bookmarks" />
+        </a>
+
+        <a href="./form.html" class="footer__link">
+          <img class="footer__img" src="./img/form.svg" alt="form" />
+        </a>
+
+        <a href="./profile.html" class="footer__link footer__link--selected">
+          <img
+            class="footer__img footer__img--selected"
+            src="./img/profile-selected.svg"
+            alt="profile"
+          />
+        </a>
+      </nav>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

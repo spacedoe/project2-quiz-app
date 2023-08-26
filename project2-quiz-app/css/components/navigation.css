@@ -1,0 +1,27 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--sea-green);
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer__link {
+  padding: 5px;
+}
+
+.footer__img {
+  width: 64px;
+  height: 64px;
+
+}
+
+.footer__link:hover {
+  transform: scale(1.2);
+}

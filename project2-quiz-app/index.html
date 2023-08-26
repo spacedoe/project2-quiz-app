@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quiz App - Home</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__text">Quiz App</h1>
+    </header>
+
+    <main>
+      <section class="question-card">
+        <img
+          class="question-card__icon"
+          data-js="question-card__icon"
+          src="./img/bookmark.svg"
+          alt="bookmark"
+        />
+        <h3 class="question-card__title">
+          What command is used to delete a branch?
+        </h3>
+
+        <button class="question-card__button" data-js="question-card__button">
+          Answer
+        </button>
+
+        <p
+          class="question-card__answer question-card__answer--hidden"
+          data-js="question-card__answer"
+        >
+          <code> git branch -d &lt;branch name&gt; </code>
+        </p>
+        <div class="question-card__tags">
+          <span class="question-card__tag question-card__tag--git">#git</span>
+        </div>
+      </section>
+
+
+      <section class="question-card">
+        <img
+          class="question-card__icon"
+          data-js="question-card__icon"
+          src="./img/bookmark.svg"
+          alt="bookmark"
+        />
+        <h3 class="question-card__title">
+          What attribute opens a link in a separate tab?
+        </h3>
+        <button class="question-card__button" data-js="question-card__button">
+          Answer
+        </button>
+        <p
+          class="question-card__answer question-card__answer--hidden"
+          data-js="question-card__answer"
+        >
+          <code> target=“_blank” </code>
+        </p>
+        <div class="question-card__tags">
+          <span class="question-card__tag question-card__tag--html">#html</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <a href="./index.html" class="footer__link footer__link--selected">
+          <img
+            class="footer__img footer__img--selected"
+            src="./img/home-selected.svg"
+            alt="home"
+          />
+        </a>
+
+        <a href="./bookmarks.html" class="footer__link">
+          <img class="footer__img" src="./img/bookmarks.svg" alt="bookmarks" />
+        </a>
+
+        <a href="./form.html" class="footer__link">
+          <img class="footer__img" src="./img/form.svg" alt="form" />
+        </a>
+
+        <a href="./profile.html" class="footer__link">
+          <img class="footer__img" src="./img/profile.svg" alt="profile" />
+        </a>
+      </nav>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

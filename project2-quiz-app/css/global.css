@@ -1,0 +1,36 @@
+:root {
+  --dark-green: #2c6e49;
+  --sea-green: #4c956c;
+  --light-yellow: #fefee3;
+  --melow: #ffc9b9;
+  --persian-orange: #d68c45;
+
+  --font-weight-normal: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--light-yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  margin-bottom: 75px;
+}
