@@ -35,7 +35,7 @@ input {
   border: 0;
 }
 
-button {
+.submit-button {
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 10px;
@@ -46,6 +46,11 @@ button {
   font-weight: var(--bold);
   display: flex;
   align-self: center;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+
 }
 
 .new-card {

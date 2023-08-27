@@ -26,6 +26,7 @@
 .question-card__icon:hover,
 .question-card__icon--selected:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .question-card__title {
@@ -45,6 +46,11 @@
   font-size: 1rem;
   font-weight: var(--bold);
 }
+
+.question-card__button:hover {
+  cursor: pointer;
+}
+
 .question-card__answer {
   margin: 0;
   padding: 10px;
