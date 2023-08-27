@@ -33,4 +33,6 @@ body {
 
 main {
   margin-bottom: 75px;
+  width: 100%;
+  max-width: 600px;
 }

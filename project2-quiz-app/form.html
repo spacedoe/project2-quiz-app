@@ -12,46 +12,53 @@
       <h1 class="header__text">Quiz App</h1>
     </header>
 
-    <main>
-      <form class="form" data-js="form">
-        <label for="form__question"><h3>Your question:</h3></label>
-        <textarea
-          name="formQuestion"
-          id="form__question"
-          data-js="textarea1"
-          cols="30"
-          rows="6"
-          maxlength="150"
-        ></textarea>
-        <p class="text-counter-message" data-js="textCountMessage">
-          150 characters left
-        </p>
+    <main data-js="main">
+      <div class="form-wrapper">
+        <form class="form" data-js="form">
+          <label for="form__question"><h3>Your question:</h3></label>
+          <textarea
+            name="formQuestion"
+            id="form__question"
+            data-js="textarea1"
+            cols="30"
+            rows="6"
+            maxlength="150"
+          ></textarea>
+          <p class="text-counter-message" data-js="textCountMessage">
+            150 characters left
+          </p>
 
-        <label for="form__answer"><h3>Your answer:</h3></label>
-        <textarea
-          name="formAnswer"
-          id="form__answer"
-          cols="30"
-          rows="3"
-          data-js="textarea2"
-          maxlength="150"
-        ></textarea>
-        <p class="text-counter-message" data-js="textCountMessage">
-          150 characters left
-        </p>
+          <label for="form__answer"><h3>Your answer:</h3></label>
+          <textarea
+            name="formAnswer"
+            id="form__answer"
+            cols="30"
+            rows="3"
+            data-js="textarea2"
+            maxlength="150"
+          ></textarea>
+          <p class="text-counter-message" data-js="textCountMessage">
+            150 characters left
+          </p>
 
-        <label for="form__tag"><h3>Tag:</h3></label>
-        <input type="text" id="form__tag" name="formTag" />
+          <label for="form__tag"><h3>Tag:</h3></label>
+          <input type="text" id="form__tag" name="formTag" maxlength="50"/>
 
-        <div class="tag-color__container">
-          <label for="tag-color"><h3>Tag color:</h3></label>
-          <input type="color" id="tag-color" name="tagColor" value="#E170DD" />
-        </div>
+          <div class="tag-color__container">
+            <label for="tag-color"><h3>Tag color:</h3></label>
+            <input
+              type="color"
+              id="tag-color"
+              name="tagColor"
+              value="#E170DD"
+            />
+          </div>
 
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">

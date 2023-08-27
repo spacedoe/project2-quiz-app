@@ -1,6 +1,7 @@
 const form = document.querySelector('[data-js="form"]');
 const question = document.getElementById("form__question");
 const tagColor = document.getElementById("tag-color");
+const main = document.querySelector('[data-js="main"]');
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -9,27 +10,27 @@ form.addEventListener("submit", (e) => {
   const data = Object.fromEntries(formData);
 
   createNewCard(data.formQuestion, data.formAnswer, data.formTag);
-  //   dataReset()
+  dataReset();
 });
 
 function createNewCard(question, answer, tag) {
   const newCard = document.createElement("section");
   newCard.classList = "new-card";
-  form.append(newCard);
+  main.append(newCard);
 
   const cardQuestion = document.createElement("h3");
   cardQuestion.textContent = question;
-  cardQuestion.className = "new-card--question";
+  cardQuestion.className = "new-card__question";
   newCard.append(cardQuestion);
 
   const cardAnswer = document.createElement("p");
   cardAnswer.textContent = answer;
-  cardAnswer.classList = "new-card--answer";
+  cardAnswer.classList = "new-card__answer";
   newCard.append(cardAnswer);
 
   const cardTag = document.createElement("p");
   cardTag.textContent = `#${tag}`;
-  cardTag.classList = "new-card--tag";
+  cardTag.classList = "new-card__tag";
   cardTag.style.backgroundColor = tagColor.value;
   newCard.append(cardTag);
 }
@@ -41,7 +42,6 @@ const dataReset = () => {
 
 const textArea1 = document.querySelector('[data-js="textarea1"]');
 const textArea2 = document.querySelector('[data-js="textarea2"]');
-// const textCount = document.querySelector('[data-js="textCountMessage"]');
 
 let textCounting = (e) => {
   const textArea = e.currentTarget;
@@ -55,9 +55,6 @@ let textCounting = (e) => {
   } else {
     textCountMessage.textContent = `${remaining} characters left`;
   }
-
-  console.log(maxLength);
-  console.log(currentLength);
 };
 
 textArea1.addEventListener("input", textCounting);
