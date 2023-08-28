@@ -63,7 +63,8 @@ input {
   border-radius: 10px;
   max-width: 540px;
   overflow-wrap: break-word;
-  margin: 10px auto;
+  margin: 10px 10px;
+  align-self: center;
 }
 
 .new-card__question {
