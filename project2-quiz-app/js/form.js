@@ -38,6 +38,8 @@ function createNewCard(question, answer, tag) {
 const dataReset = () => {
   form.reset();
   question.focus();
+  resetTextCount()
+
 };
 
 const textArea1 = document.querySelector('[data-js="textarea1"]');
@@ -49,13 +51,24 @@ let textCounting = (e) => {
   const currentLength = textArea.value.length;
   const remaining = maxLength - currentLength;
   const textCountMessage = textArea.nextElementSibling;
-
+  
   if (remaining === 1) {
     textCountMessage.textContent = `${remaining} character left`;
   } else {
     textCountMessage.textContent = `${remaining} characters left`;
   }
+  
+  
 };
 
 textArea1.addEventListener("input", textCounting);
 textArea2.addEventListener("input", textCounting);
+
+
+const textCountMessage1 = document.querySelector('[data-js="textCountMessage1"]')
+const textCountMessage2 = document.querySelector('[data-js="textCountMessage2"]')
+
+function resetTextCount() {
+  textCountMessage1.textContent = "150 characters left"
+  textCountMessage2.textContent = "150 characters left"
+}
